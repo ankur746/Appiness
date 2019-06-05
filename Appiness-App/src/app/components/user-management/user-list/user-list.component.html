@@ -1,0 +1,23 @@
+<h4 style="text-align: center">User Lisr</h4>
+<hr> <br>
+<button (click)="onAddUser()" id="button">Add User</button>
+<br>
+<br>
+<table class="center">
+    <tr>
+        <th>Name</th>
+        <th>DOB</th>
+        <th>Contact</th>
+        <th>Email</th>
+        <th>Education</th>
+        <th>Description</th>
+    </tr>
+    <tr *ngFor="let user of userList">
+        <td>{{user?.name}}</td>
+        <td>{{user?.dob}}</td>
+        <td>{{user?.name}}</td>
+        <td>{{user?.email}}</td>
+        <td>{{user?.education}}</td>
+        <td>{{user?.description}}</td>
+    </tr>
+</table>
