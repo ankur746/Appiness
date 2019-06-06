@@ -7,6 +7,7 @@ import { UserListComponent } from './user-list/user-list.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { AppMaterial } from 'src/app/app-material.module';
 import { AdminRegisterComponent } from './admin-register/admin-register.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [UserRegisterComponent, UserListComponent, AdminRegisterComponent],
@@ -15,7 +16,8 @@ import { AdminRegisterComponent } from './admin-register/admin-register.componen
     FormsModule,
     BrowserModule,
     ReactiveFormsModule,
-    AppMaterial
+    AppMaterial,
+    RouterModule
   ],
   exports: [UserRegisterComponent, UserListComponent]
 })
