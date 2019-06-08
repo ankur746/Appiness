@@ -7,18 +7,20 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class UserService {
-  user: User[] = [];
+  user: User[];
   constructor(private http: HttpClient) {
     // localStorage.setItem('userStored', this.user);
+    this.user = [];
   }
 
   public registerUser(user) {
     // this.
     this.user.push(user);
-    localStorage.setItem('userList', JSON.stringify(this.user));
+    // localStorage.setItem('userList', JSON.stringify(this.user));
   }
 
   public getUser() {
-   return JSON.parse(localStorage.getItem('userList'));
+   return this.user;
+  //  return JSON.parse(localStorage.getItem('userList'));
   }
 }

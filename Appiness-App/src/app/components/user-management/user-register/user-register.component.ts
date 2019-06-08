@@ -43,7 +43,8 @@ export class UserRegisterComponent implements OnInit {
     this.loading = true;
     this.userSer.registerUser(this.registerUser.value);
     console.log('Registration Successfully');
-    this.router.navigate(['/UserList']);
+    this.registerUser.reset();
+    // this.router.navigate(['/UserList']);
 
   }
 

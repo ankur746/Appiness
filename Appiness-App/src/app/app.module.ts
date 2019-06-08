@@ -8,6 +8,7 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AppMaterial } from './app-material.module';
 import { UserManagementModule } from './components/user-management/user-management.module';
+import { PracticeModule } from './components/practice/practice.module';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { UserManagementModule } from './components/user-management/user-manageme
     HttpClientModule,
     AppMaterial,
     FormsModule,
-    UserManagementModule
+    UserManagementModule,
+    PracticeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
